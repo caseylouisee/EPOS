@@ -1,0 +1,20 @@
+composer global require "laravel/installer"
+
+composer create-project --prefer-dist laravel/laravel project
+
+However, you may wish to review the config/app.php file and its documentation. It contains several options such as timezone and locale that you may wish to change according to your application.
+
+You may also want to configure a few additional components of Laravel, such as:
+
+Cache
+Database
+Session
+Once Laravel is installed, you should also configure your local environment.
+
+
+php artisan serve
+
+php artisan make:migration create_users_table
+
+php artisan migrate
+
